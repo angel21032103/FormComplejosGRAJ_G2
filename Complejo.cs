@@ -19,6 +19,7 @@ namespace FormComplejosGRAJ_G2
 
         }
 
+
         public static Complejo operator +(Complejo c1, Complejo c2)
         {
             Complejo c3 = new Complejo(c1.real+c2.real,c1.imaginaria+c2.imaginaria);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtbReal1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtbImaginaria1 = new System.Windows.Forms.TextBox();
@@ -43,6 +44,8 @@
             this.btnConjugar = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
             this.btnRestar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtbReal1
@@ -202,6 +205,10 @@
             this.btnRestar.UseVisualStyleBackColor = false;
             this.btnRestar.Click += new System.EventHandler(this.btnRestar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Calculadora_Complejos_Marca_GIL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,6 +232,7 @@
             this.Controls.Add(this.txtbReal1);
             this.Name = "Calculadora_Complejos_Marca_GIL";
             this.Text = "Calculadora_Complejos_Marca_GIL";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,6 +255,7 @@
         private System.Windows.Forms.Button btnConjugar;
         private System.Windows.Forms.Button btnMultiplicar;
         private System.Windows.Forms.Button btnRestar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
